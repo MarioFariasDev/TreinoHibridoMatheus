@@ -1,7 +1,7 @@
-// Função para iniciar o timer
-function iniciarTimer(dia, exercicio) {
+// Função para iniciar o timer de 60s por exercício
+function iniciarTimer(id) {
     let seconds = 60;
-    const timerDiv = document.getElementById(`timer-dia${dia}-${exercicio}`);
+    const timerDiv = document.getElementById(`timer-${id}`);
     timerDiv.textContent = `⏳ Tempo restante: ${seconds}s`;
 
     const countdown = setInterval(() => {
@@ -15,11 +15,20 @@ function iniciarTimer(dia, exercicio) {
     }, 1000);
 }
 
-// Função para marcar exercício como concluído
-function marcarConcluido(dia) {
-    const status = document.getElementById(`status${dia}`);
-    status.textContent = "✔️ Concluído";
-    status.style.color = "#0f0";
+// Função para marcar o exercício como concluído
+function marcarConcluido(id) {
+    const linha = document.getElementById(`ex-${id}`);
+    linha.classList.add("concluido");
+    const statusSpan = linha.querySelector(".status");
+    if (statusSpan) {
+        statusSpan.textContent = "✔️ Concluído";
+        statusSpan.style.color = "#0f0";
+    }
 }
 
-// Função para enviar o relatório no WhatsApp
+// Envio de relatório via WhatsApp
+function enviarRelatorio() {
+    const mensagem = `Treino semanal concluído! Semana 1 - Matheus Vinícius`;
+    const url = `https://wa.me/5592984413665?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+}

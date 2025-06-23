@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #00ff99;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #00ff99;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 15px 0;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+ul li:hover {
+  background-color: #444;
+}
+
+ul li .exercise-actions {
+  display: flex;
+  align-items: center;
+}
+
+ul li .exercise-actions input {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  width: 80px;
+}
+
+ul li .exercise-actions button {
+  background-color: #00ff99;
+  border: none;
+  color: #1a1a1a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+ul li .exercise-actions button:hover {
+  background-color: #00cc7a;
+}
+
+ul li .exercise-actions button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+ul li span {
+  color: #00ff99;
+  font-size: 1rem;
+}
+
+#timer-dia1, #timer-dia2, #timer-dia3, #timer-dia4, #timer-dia5, #timer-dia6, #timer-dia7 {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ffcc00;
+}
+
+table.ranking-table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+table.ranking-table th,
+table.ranking-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+table.ranking-table th {
+  background-color: #444;
+  color: #fff;
+}
+
+table.ranking-table td input {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00ff99;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #00cc7a;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  padding: 15px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp:hover {
+  background-color: #128c7e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li .exercise-actions {
+    margin-top: 10px;
+  }
+
+  ul li .exercise-actions input,
+  ul li .exercise-actions button {
+    margin-bottom: 5px;
+  }
+
+  .ranking-table {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .whatsapp {
+    font-size: 18px;
+    padding: 12px;
+  }
+}

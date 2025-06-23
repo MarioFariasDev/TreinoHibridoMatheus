@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plano Semanal - Matheus</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Semana 1 - Matheus Vinícius</h1>
+    <p>Plano de treino híbrido com foco em estética e hipertrofia.</p>
+
+    <!-- Ranking de Cargas -->
+    <h2>🏆 Ranking de Cargas Pessoais</h2>
+    <table class="ranking-table">
+        <thead>
+        <tr>
+            <th>Exercício</th>
+            <th>Recorde</th>
+            <th>Última Carga</th>
+            <th>Meta</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody id="ranking">
+        <tr>
+            <td>Supino Inclinado Halteres</td>
+            <td id="record-supino">24 kg</td>
+            <td><label for="carga1"></label><input type="number" id="carga1" placeholder="Ex: 24" /></td>
+            <td>26 kg</td>
+            <td>↓</td>
+        </tr>
+        <tr>
+            <td>Supino Reto Barra</td>
+            <td id="record-supino-reto">70 kg</td>
+            <td><label for="carga2"></label><input type="number" id="carga2" placeholder="Ex: 68" /></td>
+            <td>72 kg</td>
+            <td>🟡</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Treinos Semanais -->
+    <div id="dias-container">
+        <!-- DIA 1 -->
+        <h2>✅ DIA 1 – PEITO + ANTEBRAÇO + CORRIDA LEVE</h2>
+        <ul>
+            <li>
+                Supino Inclinado com Halteres – 4x10-8-6-6 (pirâmide) + rest-pause
+                <div class="exercise-actions">
+                    <label for="carga-dia1"></label><input type="number" id="carga-dia1" placeholder="Carga (kg)" />
+                    <button onclick="marcarConcluido(1)">✅ Concluir</button>
+                    <button onclick="iniciarTimer(1)">⏱️ Timer</button>
+                </div>
+                <span id="timer-dia1"></span>
+            </li>
+            <li>
+                Supino Reto com Barra – 4x8-10
+                <div class="exercise-actions">
+                    <label for="carga-dia2"></label><input type="number" id="carga-dia2" placeholder="Carga (kg)" />
+                    <button onclick="marcarConcluido(2)">✅ Concluir</button>
+                    <button onclick="iniciarTimer(2)">⏱️ Timer</button>
+                </div>
+                <span id="timer-dia2"></span>
+            </li>
+            <li>Corrida 2 km leve – respiração nasal e postura</li>
+        </ul>
+
+        <!-- DIA 2 -->
+        <h2>✅ DIA 2 – COSTAS + BÍCEPS</h2>
+        <ul>
+            <li>
+                Puxada Frente Aberta – 4x10-10-8-6
+                <div class="exercise-actions">
+                    <label for="carga-dia3"></label><input type="number" id="carga-dia3" placeholder="Carga (kg)" />
+                    <button onclick="marcarConcluido(3)">✅ Concluir</button>
+                    <button onclick="iniciarTimer(3)">⏱️ Timer</button>
+                </div>
+                <span id="timer-dia3"></span>
+            </li>
+            <li>
+                Remada Curvada – 4x8
+                <div class="exercise-actions">
+                    <label for="carga-dia4"></label><input type="number" id="carga-dia4" placeholder="Carga (kg)" />
+                    <button onclick="marcarConcluido(4)">✅ Concluir</button>
+                    <button onclick="iniciarTimer(4)">⏱️ Timer</button>
+                </div>
+                <span id="timer-dia4"></span>
+            </li>
+            <li>Rosca Direta com Barra – 4x8-10</li>
+        </ul>
+
+        <!-- DIA 3 -->
+        <h2>✅ DIA 3 – OMBROS + TRAPÉZIO + CARDIO INTERVALADO</h2>
+        <ul>
+            <li>
+                Desenvolvimento com Halteres – 4x8-10
+                <div class="exercise-actions">
+                    <label for="carga-dia5"></label><input type="number" id="carga-dia5" placeholder="Carga (kg)" />
+                    <button onclick="marcarConcluido(5)">✅ Concluir</button>
+                    <button onclick="iniciarTimer(5)">⏱️ Timer</button>
+                </div>
+                <span id="timer-dia5"></span>
+            </li>
+            <li>
+                Elevação Lateral – 4x12-15 + drop-set na última
+                <div class="exercise-actions">
+                    <label for="carga-dia6"></label><input type="number" id="carga-dia6" placeholder="Carga (kg)" />
+                    <button onclick="marcarConcluido(6)">✅ Concluir</button>
+                    <button onclick="iniciarTimer(6)">⏱️ Timer</button>
+                </div>
+                <span id="timer-dia6"></span>
+            </li>
+            <li>Cardio: 5x400m ritmo de prova (1 min de descanso)</li>
+        </ul>
+
+        <!-- DIA 4 -->
+        <h2>✅ DIA 4 – DESCANSO OU MOBILIDADE ATIVA + CORE</h2>
+        <ul>
+            <li>Mobilidade posterior: elevação de perna, ponte, torácica</li>
+            <li>Prancha – 3x30s</li>
+            <li>Abdominal infra com elevação – 3x15</li>
+        </ul>
+
+        <!-- DIA 5 -->
+        <h2>✅ DIA 5 – PERNAS (POSTERIORES) + CORRIDA LEVE</h2>
+        <ul>
+            <li>
+                Mesa Flexora – 4x12
+                <div class="exercise-actions">
+                    <label for="carga-dia7"></label><input type="number" id="carga-dia7" placeholder="Carga (kg)" />
+                    <button onclick="marcarConcluido(7)">✅ Concluir</button>
+                    <button onclick="iniciarTimer(7)">⏱️ Timer</button>
+                </div>
+                <span id="timer-dia7"></span>
+            </li>
+            <li>Agachamento leve com barra – 3x10</li>
+        </ul>
+
+        <!-- DIA 6 -->
+        <h2>✅ DIA 6 – BRAÇOS COMPLETO + PEITO AUXILIAR</h2>
+        <ul>
+            <li>Testa com Barra EZ – 4x10</li>
+            <li>Rosca Scott – 4x8</li>
+            <li>Flexão Diamante – 3x até a falha</li>
+        </ul>
+
+        <!-- DIA 7 -->
+        <h2>✅ DIA 7 – DESCANSO COMPLETO OU ATIVO</h2>
+        <ul>
+            <li>Mobilidade geral, caminhada leve ou rolo miofascial</li>
+        </ul>
+    </div>
+
+    <!-- Envio de Relatório -->
+    <h2>📤 Relatório</h2>
+    <p>Clique abaixo para enviar seu treino finalizado:</p>
+    <a class="btn" href="https://wa.me/5592984413665?text=Treino%20semana%201%20Matheus%20Vinicius%20concluído!" target="_blank">
+        📲 Enviar para o WhatsApp
+    </a>
+</div>
+
+<a class="whatsapp" href="https://wa.me/5592984413665" target="_blank">📤 WhatsApp</a>
+<script src="script.js"></script>
+</body>
+</html>

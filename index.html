@@ -1,55 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treino Semanal - Matheus</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treino do Matheus - Semana 4</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    <h1>Semana 3 - Matheus Vinícius</h1>
-    <p>Treinos fullbody adaptados para viagem com foco em manter o estímulo de hipertrofia.</p>
+  <header>
+    <h1>🔥 Semana 4 - Treino do Matheus</h1>
+    <p>Objetivo: <strong>Hipertrofia estética com foco em tronco superior</strong></p>
+  </header>
 
-    <!-- DIA A -->
-    <h2>DIA A – Fullbody Estético (Ênfase Peito + Ombro)</h2>
-    <ul>
-        <li id="ex-1">Supino reto com halteres ou máquina – 4x10-8-8-6<div class="exercise-actions"><button onclick="iniciarTimer(1)">⏱️ Timer</button><span id="timer-1">⏳</span><button onclick="marcarConcluido(1)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-2">Desenvolvimento com halteres – 3x10-10-8 + rest-pause na última<div class="exercise-actions"><button onclick="iniciarTimer(2)">⏱️ Timer</button><span id="timer-2">⏳</span><button onclick="marcarConcluido(2)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-3">Puxada alta (frente) – 3x12 com controle na descida<div class="exercise-actions"><button onclick="iniciarTimer(3)">⏱️ Timer</button><span id="timer-3">⏳</span><button onclick="marcarConcluido(3)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-4">Agachamento guiado ou livre – 3x10<div class="exercise-actions"><button onclick="iniciarTimer(4)">⏱️ Timer</button><span id="timer-4">⏳</span><button onclick="marcarConcluido(4)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-5">Rosca direta com barra – 3x12-10-8 (bi-set com martelo final)<div class="exercise-actions"><button onclick="iniciarTimer(5)">⏱️ Timer</button><span id="timer-5">⏳</span><button onclick="marcarConcluido(5)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-6">Tríceps corda ou banco – 3x12 com cadência lenta<div class="exercise-actions"><button onclick="iniciarTimer(6)">⏱️ Timer</button><span id="timer-6">⏳</span><button onclick="marcarConcluido(6)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-7">Abdômen: prancha isométrica + elevação de pernas – 3x30s + 15 reps<div class="exercise-actions"><button onclick="iniciarTimer(7)">⏱️ Timer</button><span id="timer-7">⏳</span><button onclick="marcarConcluido(7)">✅ Concluir</button><span class="status"></span></div></li>
-    </ul>
+  <main id="treinoContainer">
+    <!-- Treinos gerados dinamicamente pelo script.js -->
+  </main>
 
-    <!-- DIA B -->
-    <h2>DIA B – Fullbody Força + Braços</h2>
-    <ul>
-        <li id="ex-8">Supino inclinado com halteres – 4x8-8-6-6 com pausa de 2s no fundo<div class="exercise-actions"><button onclick="iniciarTimer(8)">⏱️ Timer</button><span id="timer-8">⏳</span><button onclick="marcarConcluido(8)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-9">Remada curvada ou máquina – 4x10-8-8-6<div class="exercise-actions"><button onclick="iniciarTimer(9)">⏱️ Timer</button><span id="timer-9">⏳</span><button onclick="marcarConcluido(9)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-10">Elevação lateral + frontal (bi-set) – 3x12 + 12 reps<div class="exercise-actions"><button onclick="iniciarTimer(10)">⏱️ Timer</button><span id="timer-10">⏳</span><button onclick="marcarConcluido(10)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-11">Leg press ou afundo com halteres – 3x10-10-8<div class="exercise-actions"><button onclick="iniciarTimer(11)">⏱️ Timer</button><span id="timer-11">⏳</span><button onclick="marcarConcluido(11)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-12">Rosca martelo – 3x12 + drop-set na última<div class="exercise-actions"><button onclick="iniciarTimer(12)">⏱️ Timer</button><span id="timer-12">⏳</span><button onclick="marcarConcluido(12)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-13">Tríceps testa com barra W – 3x10 cadenciado<div class="exercise-actions"><button onclick="iniciarTimer(13)">⏱️ Timer</button><span id="timer-13">⏳</span><button onclick="marcarConcluido(13)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-14">Abdômen: crunch com peso – 3x15 reps<div class="exercise-actions"><button onclick="iniciarTimer(14)">⏱️ Timer</button><span id="timer-14">⏳</span><button onclick="marcarConcluido(14)">✅ Concluir</button><span class="status"></span></div></li>
-    </ul>
+  <section class="instrucoes">
+  <h2>📌 Instruções da Semana</h2>
+  <ul>
+    <li>Priorize a execução perfeita dos movimentos — evite roubar carga, a conexão mente-músculo vem primeiro.</li>
+    <li>As técnicas de <strong>rest-pause, drop-set e pré-exaustão</strong> devem ser usadas até próximo da falha, mas com controle.</li>
+    <li>Hidrate-se bem antes, durante e após o treino (mínimo 3L/dia esta semana).</li>
+    <li>Use o treino de domingo (descanso ativo) para alongar os posteriores e liberar tensões.</li>
+    <li>Faça <strong>5 minutos de mobilidade torácica e posterior</strong> ao final dos treinos de superiores.</li>
+    <li>Treino de peito na sexta é focado em estética — sinta o músculo, não se preocupe com carga.</li>
+    <li><strong>Durma no mínimo 7h por noite</strong> — recuperação é o que transforma treino em resultado.</li>
+    <li>Se sentir fadiga acumulada, reduza o volume em 1 exercício por dia (sem comprometer o estímulo).</li>
+    <li><strong>Feedback obrigatório no final da semana</strong> para ajustes de progressão e recuperação.</li>
+  </ul>
+</section>
 
-    <!-- DIA C -->
-    <h2>DIA C – Fullbody Pump (Circuito)</h2>
-    <p>Executar os 6 exercícios em circuito, 3 voltas. Descanso: 30s entre exercícios.</p>
-    <ul>
-        <li id="ex-15">Flexão de braço – 15 reps<div class="exercise-actions"><button onclick="iniciarTimer(15)">⏱️ Timer</button><span id="timer-15">⏳</span><button onclick="marcarConcluido(15)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-16">Remada baixa na máquina – 15 reps<div class="exercise-actions"><button onclick="iniciarTimer(16)">⏱️ Timer</button><span id="timer-16">⏳</span><button onclick="marcarConcluido(16)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-17">Desenvolvimento halteres – 15 reps<div class="exercise-actions"><button onclick="iniciarTimer(17)">⏱️ Timer</button><span id="timer-17">⏳</span><button onclick="marcarConcluido(17)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-18">Agachamento livre – 20 reps<div class="exercise-actions"><button onclick="iniciarTimer(18)">⏱️ Timer</button><span id="timer-18">⏳</span><button onclick="marcarConcluido(18)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-19">Rosca direta – 15 reps<div class="exercise-actions"><button onclick="iniciarTimer(19)">⏱️ Timer</button><span id="timer-19">⏳</span><button onclick="marcarConcluido(19)">✅ Concluir</button><span class="status"></span></div></li>
-        <li id="ex-20">Tríceps banco – 15 reps<div class="exercise-actions"><button onclick="iniciarTimer(20)">⏱️ Timer</button><span id="timer-20">⏳</span><button onclick="marcarConcluido(20)">✅ Concluir</button><span class="status"></span></div></li>
-    </ul>
 
-    <h2>Relatório</h2>
-    <p>Envie o treino finalizado:</p>
-    <a class="btn" href="#" onclick="enviarRelatorio()">📲 Enviar para o WhatsApp</a>
+  <section class="feedback">
+    <h2>🧠 Feedback da Semana</h2>
+    <textarea id="feedback" rows="4" placeholder="Como você se sentiu nos treinos desta semana?"></textarea>
+    <button id="salvarFeedback">💾 Salvar Feedback</button>
+  </section>
 </div>
 
 <script src="script.js"></script>

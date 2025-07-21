@@ -66,7 +66,7 @@ const treinos = [
     tecnica: "Drop-set e falha mecânica",
     objetivo: "Pump extremo em braços e peitoral",
     exercicios: [
-      ["Tríceps francês banco + corda", "3", "10+10", "Bi-set", "-"],
+      ["Tríceps francês corda + tríceps na corda", "3", "10+10", "Bi-set", "-"],
       ["Tríceps testa + paralela", "3", "10 + até falha", "Bi-set", "-"],
       ["Rosca direta + martelo", "3", "10+10", "Bi-set", "-"],
       ["Rosca Scott com isometria", "3", "10", "Pausa 2s no pico", "-"],

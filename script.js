@@ -1,79 +1,74 @@
 const treinos = [
   {
-    dia: "DIA 1 – Peito + Tríceps + Core",
-    tecnica: "Reverse Pyramid + Pré-exaustão",
-    objetivo: "Hipertrofia estética com foco em peitoral e tríceps",
+    dia: "DIA 1 – Fullbody A (Peito/Tríceps)",
+    tecnica: "Reverse Pyramid + Rest-pause",
+    objetivo: "Estímulo global com foco em peitoral e tríceps",
     exercicios: [
-      ["Crossover polia baixa", "3", "15", "Pré-exaustão reversa", "Foco em alongamento"],
-      ["Supino reto barra", "4", "6-8-10-12", "Reverse pyramid", "Começa pesado e reduz carga"],
-      ["Supino inclinado com halteres", "3", "10", "Pausa 1s no topo", "Controle de amplitude"],
-      ["Tríceps testa barra W", "3", "12", "Cadência controlada", "Evitar abrir demais os cotovelos"],
-      ["Tríceps corda", "3", "15", "Rest-pause na última", "5s de pausa e completar repetições"],
-      ["Prancha com elevação de pernas", "3", "30s + 15", "Bi-set", "Core ativo"]
+      ["Supino reto barra", "4", "8-10", "Reverse pyramid", "Carga alta, reduzir peso a cada série"],
+      ["Agachamento frontal", "4", "8-10", "Controle de core", "Postura ereta e abdômen firme"],
+      ["Remada baixa máquina", "4", "10", "Cadência 3-0-2", "Foco no alongamento"],
+      ["Desenvolvimento militar barra", "3", "10", "Tempo sob tensão", "Subida forte, descida controlada"],
+      ["Tríceps corda", "3", "12-15", "Rest-pause final", "Última série com pausa de 5s"],
+      ["Rosca direta barra", "3", "12", "-", "Foco no pico da contração"],
+      ["Abdominal infra + prancha", "3", "15 + 40s", "Bi-set", "Core ativo todo tempo"]
     ]
   },
   {
     dia: "DIA 2 – Costas + Bíceps",
-    tecnica: "Cluster Sets + Cadência",
-    objetivo: "Espessura dorsal e definição de bíceps",
+    tecnica: "Cluster set + Drop-set",
+    objetivo: "Espessura dorsal e pico de bíceps",
     exercicios: [
-      ["Puxada frente pegada média", "4", "10", "Cadência 3-0-1", "Controle no retorno"],
-      ["Remada unilateral halter", "3", "12 cada", "Conexão mente-músculo", "Foco na contração"],
-      ["Remada baixa máquina", "4", "16 (4x4)", "Cluster set", "15s de descanso interno"],
-      ["Rosca direta barra", "3", "10", "Drop-set final", "Última série até falha"],
-      ["Rosca alternada inclinada", "3", "12", "-", "Rotação ao subir"],
-      ["Rosca concentrada", "2", "Até falha", "Pausa no topo", "Segurar 2s"]
+      ["Puxada frente pegada supinada", "4", "10", "Cadência 3-1-1", "Controle total no retorno"],
+      ["Remada unilateral halter", "3", "12", "Conexão mente-músculo", "Contração máxima"],
+      ["Levantamento terra romeno", "3", "8-10", "Amplitude controlada", "Foco em posteriores e lombar"],
+      ["Rosca direta barra", "3", "10", "Drop-set final", "Última série até a falha"],
+      ["Rosca alternada inclinada", "3", "12", "-", "Rotação de punho ao subir"],
+      ["Rosca concentrada", "2", "Até falha", "Pausa 2s no topo", "Isolamento total"]
     ]
   },
   {
-    dia: "DIA 3 – Posteriores + Core",
+    dia: "DIA 3 – Fullbody B (Pernas/Core)",
     tecnica: "Tensão contínua + Isometria",
-    objetivo: "Ênfase em glúteo e posterior com controle",
+    objetivo: "Ênfase em pernas, glúteos e core",
     exercicios: [
-      ["Stiff com halteres pesados", "4", "8", "3s descida", "Explodir na subida"],
-      ["Mesa flexora", "4", "12", "Isometria 1s no topo", "Ativação consciente"],
-      ["Passada estacionária com halteres", "3", "10/10", "Profunda e controlada", "Sem balanço"],
-      ["Elevação pélvica com peso", "3", "15", "Pausa no topo", "Sustentar 1s"],
-      ["Abdômen oblíquo + prancha lateral", "3", "15 + 30s", "Bi-set", "Estabilidade e rotação"]
+      ["Stiff com barra", "4", "10", "3s descida", "Explosivo na subida"],
+      ["Agachamento búlgaro", "3", "10/10", "Unilateral", "Controle sem balanço"],
+      ["Supino inclinado halteres", "3", "10", "Isometria no topo", "Foco em peitoral superior"],
+      ["Remada curvada barra", "3", "10", "Cadência controlada", "Contração máxima"],
+      ["Elevação lateral halter", "3", "12", "-", "Amplitude total"],
+      ["Tríceps testa barra W", "3", "12", "-", "Controle do movimento"],
+      ["Prancha lateral + abdominal oblíquo", "3", "30s + 15", "Bi-set", "Core e estabilidade lateral"]
     ]
   },
   {
-    dia: "DIA 4 – Ombros + Trapézio + Antebraço",
-    tecnica: "Drop-set sequencial + Supersérie",
-    objetivo: "Definição do deltoide e vascularização de antebraço",
+    dia: "DIA 4 – Peito + Ombros + Tríceps",
+    tecnica: "Rest-pause + Supersérie",
+    objetivo: "Densidade no peitoral e deltoides",
     exercicios: [
-      ["Desenvolvimento com halteres sentado", "4", "10", "Drop-set na última", "Foco em amplitude"],
-      ["Elevação lateral + frontal", "3", "12+12", "Supersérie", "Sem descanso entre movimentos"],
-      ["Crucifixo inverso na polia", "3", "15", "Tempo sob tensão 2-1-2", "Deltoide posterior"],
-      ["Encolhimento com barra", "3", "15", "Pausa no topo", "Segurar 1s"],
-      ["Rosca punho + rosca inversa", "3", "15+12", "Bi-set", "Foco vascular"]
+      ["Supino inclinado barra", "4", "8", "Rest-pause última série", "Força máxima"],
+      ["Crucifixo inclinado polia", "3", "12-15", "Pump", "Alongar e contrair bem"],
+      ["Desenvolvimento halteres", "3", "10", "Amplitude total", "Controle total"],
+      ["Elevação lateral + frontal", "3", "12+12", "Supersérie", "Sem descanso entre séries"],
+      ["Tríceps francês + tríceps banco", "3", "12 + falha", "Bi-set", "Queima total de tríceps"],
+      ["Flexão isométrica", "2", "Até falha", "Segurar 2s no fundo", "Controle lento"]
     ]
   },
   {
-    dia: "DIA 5 – Peito Variado + Core",
-    tecnica: "Rest-Pause + Pump focalizado",
-    objetivo: "Estímulos variados no peitoral superior e core",
+    dia: "DIA 5 – Braços + Core",
+    tecnica: "Bi-set + Pump final",
+    objetivo: "Volume em braços e pump estético",
     exercicios: [
-      ["Supino inclinado com barra", "4", "8-8-6-6", "Rest-pause na última", "Recuperação curta"],
-      ["Crossover em Y (ângulo alto)", "3", "15", "Pump", "Pausa de 1s na contração"],
-      ["Supino reto com halteres", "3", "10", "Amplitude + contração", "Controle da fase excêntrica"],
-      ["Flexão com isometria no fundo", "2", "Até falha", "Segurar 2s no ponto mais baixo", "-"],
-      ["Crunch com peso + prancha dinâmica", "3", "15 + 30s", "Bi-set", "Core completo"]
-    ]
-  },
-  {
-    dia: "DIA 6 – Braços + Peito Pump",
-    tecnica: "Bi-set pesado + Pump",
-    objetivo: "Volume e estética em braços com pump final de peito",
-    exercicios: [
-      ["Tríceps corda + testa (bi-set)", "3", "12+12", "-", "Sem descanso entre"],
-      ["Rosca direta + martelo (bi-set)", "3", "10+10", "-", "Conexão e pico"],
-      ["Rosca Scott com pausa final", "3", "10", "Pausa 2s no topo", "Maximizar tensão"],
-      ["Crossover alto + baixo", "3", "15+15", "Combo pump", "Estética total"],
-      ["Flexão diamante", "2", "Até falha", "Controle lento", "-"]
+      ["Rosca direta + martelo", "3", "10+10", "Bi-set", "Sem descanso entre variações"],
+      ["Rosca Scott", "3", "10", "Pausa 2s no topo", "Tensão máxima"],
+      ["Rosca alternada", "3", "12", "-", "Rotação de punho ao final"],
+      ["Tríceps corda", "3", "12-15", "-", "Última série até a falha"],
+      ["Tríceps testa barra", "3", "10", "-", "Controle total do movimento"],
+      ["Crossover 3 ângulos", "3", "15", "Pump final", "Peitoral cheio e estético"],
+      ["Abdominal supra com peso", "3", "15", "-", "Controle de lombar"]
     ]
   }
 ];
+
 
 const treinoContainer = document.getElementById("treinoContainer");
 const progresso = JSON.parse(localStorage.getItem("progresso") || "{}");
@@ -174,4 +169,5 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
